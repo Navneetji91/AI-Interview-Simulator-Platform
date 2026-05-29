@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { Lightbulb, Copy, UploadCloud, FileText, X } from 'lucide-react'
+import { Lightbulb, Copy, UploadCloud, FileText } from 'lucide-react'
 import { Card } from '@/components/ui/Card'
 import * as pdfjsLib from 'pdfjs-dist'
 
