@@ -1,4 +1,4 @@
-import { memo, useState, ReactNode } from 'react'
+import { memo, useState } from 'react'
 import { ChevronDown, Sparkles, Trash2 } from 'lucide-react'
 import { useResumeStore } from '@/store/resumeStore'
 import { Button } from '@/components/ui/Button'
