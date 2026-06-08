@@ -121,7 +121,7 @@ const SummarySection = memo(() => {
           onClick={() => setExpanded(!expanded)}
           className="w-full flex items-center justify-between py-4 px-6 hover:bg-gray-50 dark:hover:bg-dark-card transition-colors"
         >
-          <h3 className="text-lg font-semibold">📝 Professional Summary</h3>
+          <h3 className="text-lg font-semibold">Professional Summary</h3>
           <ChevronDown
             size={20}
             className={`transition-transform ${expanded ? 'rotate-180' : ''}`}
