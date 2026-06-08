@@ -155,7 +155,7 @@ export function MockInterview() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-2">Ideal Answer Comparison</h3>
+            <h3 className="font-semibold mb-2">Ideal Answers Comparison</h3>
             <div className="p-3 bg-gray-50 dark:bg-dark-bg rounded text-sm text-gray-700 dark:text-gray-300">
               {evaluation.idealAnswerComparison}
             </div>
