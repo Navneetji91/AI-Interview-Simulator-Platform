@@ -102,7 +102,7 @@ export function JobMatchAnalyzer() {
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm font-semibold mb-2">Your Resume (PDF)</label>
+          <label className="block text-sm font-semibold mb-2">Your Resume </label>
           
           {!resumeFileName ? (
             <div 
