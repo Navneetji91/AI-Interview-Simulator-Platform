@@ -1,80 +1,118 @@
-# CareerAI - AI Career Platform
+# AI Interview Simulator Platform
 
-CareerAI is a free React application for building resumes, preparing for interviews, and comparing a resume against job descriptions. It uses Google Gemini for AI-powered writing, questions, scoring, and suggestions.
+AI Interview Simulator Platform is a full-stack web application that helps job seekers create ATS-friendly resumes, practice AI-powered mock interviews, and analyze job descriptions. The platform combines React, Spring Boot, MongoDB, JWT Authentication, and Google Gemini AI to deliver personalized career preparation. Users can securely manage their profiles, receive AI-generated interview feedback, and improve their resumes through intelligent suggestions. It provides an end-to-end solution for interview preparation and career development.
 
 ## Features
 
-- Resume builder with personal info, summary, experience, education, skills, projects, and certifications
-- Live resume preview with multiple templates
-- PDF export for resumes
-- AI summary generation
-- AI experience bullet improvement
-- AI skill suggestions
-- ATS keyword checker
-- Interview question generator
-- Mock interview mode with AI feedback
-- Job match analyzer with score, missing skills, matching skills, and suggestions
-- Dark mode with local persistence
+### Authentication
+- User Registration
+- Secure Login
+- JWT Authentication
+- Protected Routes
+
+### Resume Builder
+- Multiple Resume Templates
+- Resume Preview
+- AI Resume Summary
+- AI Experience Improvement
+- ATS Resume Checker
+- PDF Export
+
+### Interview Preparation
+- AI Interview Question Generator
+- Technical Interview
+- HR Interview
+- Behavioral Interview
+- AI Feedback & Scoring
+- Resume-based Interview Questions
+
+### Job Match Analyzer
+- Resume Upload
+- ATS Score
+- Skill Gap Analysis
+- Job Description Matching
+- AI Suggestions
+
+### Dashboard
+- User Profile
+- Activity Overview
+- Dark Mode
 - Responsive UI
 
 ## Tech Stack
 
+### Frontend
 - React 18
-- TypeScript
+- JavaScript (JSX)
 - Vite
 - Tailwind CSS
 - React Router
 - Zustand
-- Google Gemini AI
-- html2canvas
-- jsPDF
-- Lucide React
-- React Hot Toast
+
+### Backend
+- Spring Boot
+- Java 17
+- Spring Security
+- JWT
+- Maven
+
+### Database
+- MongoDB
+
+### AI
+- Google Gemini API
+
+### Tools
+- Docker
+- Git
+- GitHub
+- Postman
+- VS Code
 
 ## Project Status
 
-This project currently has no separate backend. The app runs as a frontend-only Vite application.
+This project follows a full-stack architecture with a React frontend, Spring Boot backend, MongoDB database, and Google Gemini AI integration. Authentication is handled using JWT, and user information is securely stored in MongoDB.
 
 AI requests are made from:
 
 ```text
 src/lib/gemini.ts
 ```
-
+```
 Resume and interview data is stored in the browser using localStorage through Zustand persistence.
 
-## Folder Structure
+AI-Interview-Simulator/
 
-```text
-InterviewPrep/
+├── backend/
+│   ├── config/
+│   ├── controller/
+│   ├── dto/
+│   ├── model/
+│   ├── repository/
+│   ├── security/
+│   └── service/
+│
 ├── src/
 │   ├── components/
-│   │   ├── interview/
-│   │   ├── jobmatch/
-│   │   ├── resume/
-│   │   └── ui/
-│   ├── hooks/
-│   ├── lib/
-│   │   └── gemini.ts
 │   ├── pages/
+│   ├── hooks/
 │   ├── store/
-│   ├── types/
-│   ├── App.tsx
-│   ├── index.css
-│   ├── main.tsx
-│   └── vite-env.d.ts
-├── index.html
+│   ├── lib/
+│   └── assets/
+│
+├── Dockerfile
+├── docker-compose.yml
 ├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-└── vite.config.ts
+└── README.md
 ```
 
-## Requirements
-
-- Node.js
-- npm
-- Google Gemini API key
+Node.js 18+
+npm
+Java 17+
+Maven
+MongoDB
+Google Gemini API Key
+Docker 
 
 ## Environment Variables
 
