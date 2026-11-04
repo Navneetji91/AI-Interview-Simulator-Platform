@@ -47,7 +47,7 @@ AI Interview Simulator Platform is a full-stack web application that helps job s
 - Vite
 - Tailwind CSS
 - React Router
-- Zustand
+  
 
 ### Backend
 - Spring Boot
